@@ -1,6 +1,6 @@
 body { 
     font-family: Arial, sans-serif; 
-    margin: 20px; 
+    margin: 0; 
     background-image: url('fruit-background.jpg'); 
     background-size: cover; 
     background-position: center; 
@@ -17,21 +17,26 @@ header, section, footer {
 nav ul { 
     list-style-type: none; 
     padding: 0; 
+    display: flex; 
+    justify-content: center; /* Center the navigation items */
+    background: rgba(0, 0, 0, 0.8); /* Darker background for the nav */
+    margin: 0;
 }
 
 nav ul li { 
-    display: inline; 
-    margin-right: 10px; 
+    margin: 0 15px; /* Add spacing between the navigation items */
 }
 
 nav a { 
     color: white; 
     text-decoration: none; 
     font-weight: bold; 
+    padding: 10px 15px; /* Add padding for better click area */
 }
 
 nav a:hover { 
-    text-decoration: underline; 
+    background: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    border-radius: 5px; /* Add some rounding for aesthetics */
 }
 
 section { 
